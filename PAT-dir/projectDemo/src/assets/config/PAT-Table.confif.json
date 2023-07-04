@@ -1,0 +1,85 @@
+{
+    "resourceType": "Bundle",
+    "meta": {
+      "profile": [
+        ""
+      ]
+    },
+    "type": "searchset",
+    "total": 14,
+    "entry": [
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": ""
+          }
+        ],
+        "resource": {
+          "resourceType": "SearchPAt",
+          "id": "700000033240",
+          "extension": [
+            {
+              "url": "",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "",
+                    "code": "CC_RL_Native",
+                    "display": "Native"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "",
+              "valueBoolean": true
+            }
+          ],
+          "identifier": [
+            {
+              "use": "secondary",
+              "value": "1"
+            }
+          ],
+          "organization": {
+            "reference": ""
+          },
+          "code": [
+            {
+              "coding": [
+                {
+                  "system": "",
+                  "code": "administrator",
+                  "display": "administrator Role"
+                }
+              ]
+            }
+          ],
+          "specialty": [
+            {
+              "coding": [
+                {
+                  "system": "",
+                  "code": "9",
+                  "display": "ORTHODONTICS"
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "",
+                  "code": "114",
+                  "display": "ORTHODONTICS"
+                }
+              ]
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      }
+    ]
+  }

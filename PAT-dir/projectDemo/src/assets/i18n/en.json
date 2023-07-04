@@ -1,0 +1,24 @@
+{
+    "title" : "Product Analysis Tool [PAT TOOL]",
+    "search" :"Search",
+    "PAT-Table": {
+        "image":"Image",
+        "type":"Type",
+        "number":"Number",
+        "gstart":"G-Start",
+        "mStart":"M-Start",
+        "gEnd":"G-End",
+        "mEnd":"M-End",
+        "issues":"Issues",
+        "ssceds":"SSC - EDS",
+        "wedsite":"Web Site",
+        "dexf":"Dexf",
+        "name":"Name"
+    },
+    "settings":"Settings",
+    "localization":{
+        "en":"English",
+        "ar":"Arabic"
+    }
+
+}

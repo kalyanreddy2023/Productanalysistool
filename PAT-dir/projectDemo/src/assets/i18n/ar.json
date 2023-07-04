@@ -1,0 +1,19 @@
+{
+    "title":"أداة تحليل المنتج [PAT TOOL]",
+    "search" :"يبحث",
+    "PAT-Table": {
+        "image":"صورة",
+        "name":"اسم",
+        "type":"يكتب",
+        "number":"رقم",
+        "gstart":"G- ستارت",
+        "mStart":"إم-ستارت",
+        "gEnd":"جي إند",
+        "mEnd":"يصلح",
+        "issues":"مشاكل",
+        "ssceds":"SSC - EDS",
+        "wedsite":"موقع إلكتروني",
+        "dexf":"ديكسف"
+    },
+    "settings":"إعدادات"
+}

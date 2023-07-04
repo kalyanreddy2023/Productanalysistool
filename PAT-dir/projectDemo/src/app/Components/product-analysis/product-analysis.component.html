@@ -1,0 +1,123 @@
+<div>
+        <ng-container >
+            <div class="headerText">
+                <label class="labelAlign"><b>{{title}}</b></label>
+            </div>
+        </ng-container>
+        <br>
+    </div>
+    <div id="content">
+        <ng-container>
+            <div class="row" style="margin-left:15px;" >
+                
+                <div styel="padding:12px"class="col-lg-4 col-sm-12 col-md-6 divSerchAlign">
+                    <form class="nosubmit">
+                        <input class="nosubmit" type="search"  style="text-transform: uppercase; font-size:15px;" id="searchid"  placeholder="Search...">
+                    </form>
+                </div>
+                <div  class="col-lg-4 col-sm-12 col-md-6 divAlign">
+                    <select class="selectAlign"   #mySelect 
+                    (change)='countrySelected(mySelect.value)'>
+                        <option *ngFor="let data of counterDetails">
+                            {{data.code}} {{data.name}} 
+                        </option>
+                    </select>
+                </div> 
+                <div class="col-lg-2 col-sm-12 col-md-6 divAlign">
+                    <select class="selectAlign"  [disabled]="marketlocal"  #mySelect >
+                        <option *ngFor="let data of countryLangs">
+                            {{data.name}}
+                        </option>
+                    </select>
+                </div>
+                <div styel="padding-left: 5px;
+                padding-right: 0px;" class="col-lg-2 col-sm-12 col-md-6">
+                <button type="button" style="height: 35px;
+                width: 100px;" (click)="findarticle()">Find Article</button>
+                
+                </div>
+            </div>
+        </ng-container>
+    </div>
+
+    <div class ="row" style="margin-left: 35px;" *ngIf="tableshow">
+    
+        <div styel="padding:12px"class="col-lg-8 col-sm-12 col-md-6 divSerchAlign">
+            <h1><b>KOMP SHOE INSERT F-P OUT TRAY 70*35 light grey</b></h1>
+            
+        </div>
+    </div>
+    <br>
+    <div *ngIf="tableshow">
+    <table style="width: 95%;">
+        <thead>
+            <tr >
+                <th>IMG</th>
+                <th>TYPE</th>
+                <th>Name</th>
+                <th>G.Start</th>
+                <th>G.End</th>
+                <th>M.Start</th>
+                <th>M.End</th>
+                <th>Issues</th>
+                <th>SSD-EDS</th>
+            </tr>
+        </thead>
+        <tbody  style="height: 40px;" >
+            <tr >
+            
+                <td>TBD</td>
+                <td>TBD</td>
+                <td>TBD</td>
+                <td>TBD</td>
+                <td>TBD</td>
+                <td>TBD</td>
+                <td>TBD</td>
+                <td>TBD</td>
+                <td>TBD</td>
+                
+
+            </tr>
+
+        </tbody>
+        
+    </table>
+    <br>
+    <br>
+
+        <table style="width: 95%;" >
+            <thead>
+                <tr >
+                    <th>Item ID</th>
+                    <th>DEXF</th>
+                    <th>IKEA.COM</th>
+                    <th>OPERERA</th>
+                    <th>PIA Facts</th>
+                    
+                
+                </tr>
+            </thead>
+            <tbody style="height:50px;">
+                <tr *ngFor="let data of apidata">
+                
+                    <td>{{data.itemId}}</td>
+                    <td  [ngClass]=" valid ? 'primary' : 'secondary'"> 
+                        {{data.valid}}</td>
+                    <td  [ngClass]=" ikearesponse ? 'primary' : 'secondary'" *ngIf="ikearesponse"> true</td>
+                    <td [ngClass]=" ikearesponse ? 'primary' : 'secondary'"*ngIf="ikearesponse2">false</td>
+
+                
+                    <td>TBD</td>
+                    <td>TBD</td>
+                    
+                    
+                    
+                
+                    
+        
+                </tr>
+        
+            </tbody>
+            
+        </table>
+    </div>
